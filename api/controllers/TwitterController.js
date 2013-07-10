@@ -4,6 +4,8 @@
 ---------------------*/
 var TwitterController = {
   timeline: function(req, res){
+
+    //Use the Waterline syntax
     var criteria = {
       where: {
         screen_name: req.params.screen_name,

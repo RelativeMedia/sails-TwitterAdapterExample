@@ -19,10 +19,5 @@ module.exports.adapters = {
 	},
 
 	//get these keys from your developer profile for twitter
-	twitter: {
-		consumer_key: 'foo',
-		consumer_secret: 'bar',
-		access_token: 'baz',
-		access_token_secret: 'bang'
-	}
+
 };
