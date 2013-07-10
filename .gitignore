@@ -44,3 +44,5 @@ nbproject
 ########################
 config/local.js
 config/adapters.js
+
+config/adapters.js
