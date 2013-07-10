@@ -25,6 +25,10 @@ module.exports.routes = {
 		controller: 'twitter',
 		action: 'timeline'
 	},
+	'get /twitter/search/:query/:count' : {
+		controller: 'twitter',
+		action: 'search'
+	},
 	// To route the home page to the "index" action of FooController
 	// (if no controller exists, Sails will look for a view called `views/home/index.*`)
 	// '/' : {
