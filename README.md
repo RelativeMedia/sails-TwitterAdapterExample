@@ -1,14 +1,26 @@
 # Sails-TwitterExample
-TwitterAdapter.js is mostly from the [sails-twitter](http://github.com/balderdashy/sails-twitter) repository, just modified slightly to work with 0.9x
+TwitterAdapter.js is mostly from the [sails-twitter](http://github.com/balderdashy/sails-twitter) repository, just modified slightly to work with 0.9x and a few of my own goodies.
 
 Edit `/config/adapters.js` with your twitter API credentials.
 run `sails lift` from the working directory
-visit web browser at `localhost:1337/twitter/timeline/<screen_name>/<count>`
 
-for example: `http://localhost:1337/twitter/timeline/gorelative/3`
+##Examples
+Here are a few things you can do so far.. You can pass get parameters or use a simplified version accessible via URLs.
 
-Add additional routes and actions to the TwitterController for things other than timeline..
+###pull a users timeline with limit..
+**syntax** `localhost:1337/twitter/timeline/<screen_name>/<count>`
+
+- for example: `http://localhost:1337/twitter/timeline/gorelative/3`
+- or via GET PARAMS: `http://localhost:1337/twitter/timeline?screen_name=gorelative&count=20&exclude_replies=1`
+
+###Search for tweets..
+**syntax** `localhost:1337/twitter/search/<query>/<count>`
+
+- for example: `http://localhost:1337/twitter/search/bananas/3`
+- or via GET PARAMS: `http://localhost:1337/twitter/search/@nettuts/10`
+- or via GET PARAMS: `http://localhost:1337/twitter/search?q=banana since:2013-07-06 until:2013-07-07&count=10`
 
 ##Todo
 
-- Need to update the TwitterAdapter.js file to not have to be accessed via `Twitter.adapter.find()` and hopefully just `Twitter.find()`
+- Update documentation
+- Perform some simple validations
