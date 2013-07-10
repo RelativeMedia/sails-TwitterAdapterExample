@@ -1,5 +1,7 @@
 /*---------------------
   :: TwitterAdapter
+  A Majority of this code is from particlebanana:
+  https://github.com/balderdashy/sails-twitter
   -> adapter
 ---------------------*/
 var Twit = require('twit');
